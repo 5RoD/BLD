@@ -17,7 +17,7 @@ We’re building something special here for the e-sports scene, focused on innov
 
 - **Dilan**
 - **Mohamad**
-- **Mahi 
+- **Mahi**
 - **Zaki**
 
 Big props to the squad for bringing the vision to life. 🙌
