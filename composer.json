@@ -1,0 +1,25 @@
+{
+    "name": "moh/bld",
+    "autoload": {
+        "psr-4": {
+            "Moh\\Bld\\": "src/"
+        },
+        "classmap": [
+            "public/html/index.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "5rod",
+            "email": "2158177@talnet.nl"
+        }
+    ],
+    "require": {
+
+    },
+    "config": {
+        "platform": {
+            "php": "8.2.12"
+        }
+    }
+}
