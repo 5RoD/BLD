@@ -1,0 +1,35 @@
+:root {
+    /*Kleuren*/
+
+    --bg-dark: #010100;
+    --title-color: #e4072f;
+    --accent-color: #595a59;
+    --font-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    background-color: var(--bg-dark);
+}
+
+header {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+footer {
+    border-top: 1px solid var(--accent-color);
+    padding-top: 25px;
+    margin-top: 25px;
+
+    border-left: 1px solid var(--accent-color);
+    padding-left: 30px;
+    margin-left: 3px;
+
+    border-right: 1px solid var(--accent-color);
+    padding-right: 30px;
+    margin-right: 3px;
+}
+
+.disclaimer {
+    color: var(--accent-color);
+}
