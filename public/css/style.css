@@ -1,35 +1,183 @@
 :root {
-    /*Kleuren*/
-
+    /* Color scheme */
     --bg-dark: #010100;
     --title-color: #e4072f;
     --accent-color: #595a59;
     --font-color: #ffffff;
+    --btn-bg-color: #e4072f;
+    --btn-hover-color: #9c0537;
+    --footer-bg: #141414;
 }
 
+/* Universal styles */
 * {
     margin: 0;
-    background-color: var(--bg-dark);
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--font-color);
+}
+
+/* Header */
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     border-bottom: 1px solid var(--accent-color);
 }
 
-footer {
-    border-top: 1px solid var(--accent-color);
-    padding-top: 25px;
-    margin-top: 25px;
-
-    border-left: 1px solid var(--accent-color);
-    padding-left: 30px;
-    margin-left: 3px;
-
-    border-right: 1px solid var(--accent-color);
-    padding-right: 30px;
-    margin-right: 3px;
+header .logo h1 {
+    font-size: 2.5rem;
+    color: var(--title-color);
 }
 
-.disclaimer {
+header .logo p {
+    font-size: 1.2rem;
     color: var(--accent-color);
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav .nav-item a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav .nav-item a:hover {
+    background-color: var(--title-color);
+    color: var(--bg-dark);
+}
+
+/* Hero Section */
+.join {
+    background-image: url('sentinels-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--font-color);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.join h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.join p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn-main {
+    background-color: var(--btn-bg-color);
+    color: var(--font-color);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-main:hover {
+    background-color: var(--btn-hover-color);
+}
+
+/* Team Section */
+.team-members {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.team-members h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--title-color);
+}
+
+.members {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.member {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.member h4 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.member p {
+    font-size: 1rem;
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+/* Latest Match Section */
+.latest-match {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.latest-match h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.latest-match p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg);
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid var(--accent-color);
+}
+
+footer .disclaimer {
+    color: var(--accent-color);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+footer .socials a {
+    color: var(--font-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .socials a:hover {
+    color: var(--title-color);
 }
