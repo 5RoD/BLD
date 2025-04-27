@@ -1,5 +1,6 @@
 {
     "name": "moh/bld",
+    "description": "BLD e-Sports Team: A Counter-Strike team management system",
     "autoload": {
         "psr-4": {
             "Moh\\Bld\\": "src/"
@@ -14,9 +15,8 @@
             "email": "2158177@talnet.nl"
         }
     ],
-    "require": {
-
-    },
+    "require": {},
+    "license": "proprietary",
     "config": {
         "platform": {
             "php": "8.2.12"
