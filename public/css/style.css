@@ -62,7 +62,7 @@ header nav .nav-item a:hover {
 
 /* Hero Section */
 .join {
-    background-image: url('sentinels-banner.jpg');
+    background-image: url('../images/background.jpg');
     background-size: cover;
     background-position: center;
     color: var(--font-color);
@@ -93,6 +93,8 @@ header nav .nav-item a:hover {
 .btn-main:hover {
     background-color: var(--btn-hover-color);
 }
+
+
 
 /* Team Section */
 .team-members {
