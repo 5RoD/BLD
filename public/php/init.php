@@ -1,6 +1,12 @@
 <?php
-// Use this to connect to mysql correctly!
+// Use this file to connect to mysql correctly!
 require_once 'env.php';
 require_once 'connect.php';
-loadEnv(__DIR__ . '/../../.env'); // Updated path to root directory
+// loads the database info safely
+try {
+    loadEnv(__DIR__ . '/../../.env');
+} catch (Exception $e) {
+    error_log("Yo an error happened fix me @ init.php" . $e -> getMessage());
+}
+
 ?>
