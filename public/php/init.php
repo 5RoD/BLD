@@ -6,6 +6,7 @@ require_once 'connect.php';
 try {
     loadEnv(__DIR__ . '/../../.env');
 } catch (Exception $e) {
-
+    error_log("Yo an error happened fix me @ init.php" . $e -> getMessage());
 }
+
 ?>
