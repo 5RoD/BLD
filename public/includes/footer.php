@@ -6,7 +6,7 @@
     <div class="socials">
 
 
-        <a href="#">GitHub
-            <img src="../images/svg/github.svg" alt="GitHub"</a>
+        <a href="https://github.com/5RoD/BLD">GitHub
+            <img src="../images/svg/github.svg" alt="GitHub"></a>
     </div>
 </footer>

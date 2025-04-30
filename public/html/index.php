@@ -6,16 +6,16 @@ include_once('../includes/header.php');
 require_once('../php/init.php');
 
 // Default page is set to 'home'
-$page = isset($_GET['page']) ? basename($_GET['page']) : 'home';
-
-// check if the page ends with .php
+$page = isset($_GET['page']) ? $_GET['page'] : 'home';
 $page_file = $page . '.php';
-if (file_exists($page_file)) { // if the file is REAL!!#!#?
-    include_once($page_file); // this will load it
+
+if (file_exists($page_file)) {
+    include_once($page_file);
 } else {
-    include_once('404.php'); // Otherwise it's bad :(
+    include_once('404.php');
 }
 
 // Load footer
 include_once('../includes/footer.php');
 ?>
+<script src="../js/motionBlur.js"></script>

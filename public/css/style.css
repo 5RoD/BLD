@@ -1,3 +1,9 @@
+html {
+    scroll-behavior: smooth !important;
+    overflow-y: auto;
+}
+
+
 :root {
     /* Color scheme */
     --bg-dark: #010100;
@@ -10,23 +16,6 @@
 }
 
 
-/*Animations and etc*/
-
-@keyframes blurBreathing {
-    0% {
-        filter: blur(2px);
-    }
-    50% {
-        filter: blur(4px);
-    }
-    100% {
-        filter: blur(2px);
-    }
-}
-
-.breathing-effect {
-    animation: blurBreathing 3s ease-in-out infinite;
-}
 
 /* Universal styles */
 * {
@@ -190,6 +179,222 @@ header nav .nav-item a:hover {
     transform: scale(1.05);
 }
 
+
+.news {
+    padding: 20px 10px;
+    text-align: center;
+    border-top: 1px solid var(--accent-color);
+}
+
+/*https://uiverse.io/Sharkotech/cowardly-walrus-58*/
+/* Cards for the news */
+.card {
+
+    width: 350px;
+    height: 250px;
+    background: rgba(211, 211, 211, 0.199);
+    position: absolute;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.3);
+}
+
+#c1 {
+    background-color: #151516;
+    background-size: 90%;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23381717' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");border-radius: 10px;
+    padding: 20px;
+    width: 450px;
+    height: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+}
+
+#c2 {
+    background-color: #151516;
+    background-size: 20%;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23381717' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");border-radius: 10px;
+    padding: 20px;
+    width: 450px;
+    height: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#c3 {
+    background-color: #151516;
+    background-size: 70%;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23381717' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");border-radius: 10px;
+    padding: 20px;
+    width: 450px;
+    height: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#c4 {
+    background-color: #151516;
+    background-size: 50%;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23381717' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");border-radius: 10px;
+    padding: 20px;
+    width: 450px;
+    height: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.main:hover #c1 {
+    transform: translateX(-100px) rotate(-30deg);
+}
+
+.main:hover #c2 {
+    transform: translateX(-50px) rotate(-20deg);
+}
+
+.main:hover #c3 {
+    transform: translateX(0) rotate(-10deg);
+}
+
+.main:hover #c4 {
+    transform: translateX(50px) rotate(-5deg);
+}
+
+#c1:hover {
+    transform: translateX(-200px) rotate(0deg) !important;
+
+}
+
+#c2:hover {
+    transform: translateX(-200px) rotate(0deg) !important;
+}
+
+#c3:hover {
+    transform: translateX(-200px) rotate(0deg) !important;
+}
+
+#c4:hover {
+    transform: translateX(0px) rotate(0deg) !important;
+}
+/*blurs the background on hover*/
+.cards:hover > .card:not(:hover) {
+    filter: blur(3px);
+
+}
+
+.main {
+    display: grid;
+    height: 30vmax;
+    place-items: center;
+    padding-top: 50px;
+}
+
+.card img {
+    margin-top: 40px;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+}
+
+#c4 img {
+
+    margin: 30px 60px;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 1);
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+}
+
+
+
+
+.news-article {
+    padding: 50px 10px 30px 10px;
+    text-align: center;
+}
+
+.news-article a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 7px 66px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.news-article a:hover {
+    background-color: var(--title-color);
+    color: var(--bg-dark);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 1);
+
+}
+
+.news-article img {
+    margin: 30px auto;
+    width: 60%;
+    height: 30%;
+    object-fit: cover;
+    display: flow;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+}
+
+.news-article p {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin: 15px 0;
+    text-align: center;
+    text-shadow: 0 0 30px 20px rgba(0, 0, 0, 1);
+
+}
+.news-article h1 {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    margin: 1px 0;
+    text-align: center;
+    text-shadow: 0 0 30px 20px rgba(0, 0, 0, 1);
+
+}
+
+.news-card {
+    background-color: #151516;
+    background-size: 40%;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23381717' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");border-radius: 10px;
+    margin: auto;
+    width: 60%;
+    height: auto;
+
+}
+.news-card-text {
+padding: 30px 30px;
+    text-align: center;
+}
+
+
 /* Latest Match Section */
 .latest-match {
     padding: 50px 20px;
@@ -207,9 +412,6 @@ header nav .nav-item a:hover {
 }
 
 
-html, body {
-    height: 100%;
-}
 
 body {
     display: flex;
@@ -281,6 +483,14 @@ footer .socials img {
     color: var(--title-color);
 }
 
+.signup-container p {
+    margin-top: 8px;
+    font-size: 10px;
+    color: gray;
+
+}
+
+
 .signup-form input {
     width: 100%;
     padding: 12px 15px;
@@ -315,4 +525,134 @@ footer .socials img {
 
 .signup-form button:hover {
     background-color: var(--title-color);
+}
+
+.forOfor {
+    background-color: var(--bg-dark);
+    padding: 0;
+    color: var(--font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/background-rotated.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.forOfor h2 p {
+    font-size: 3rem;
+    color: var(--title-color);
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.clock {
+    width: 10px;
+    height: 10px;
+}
+
+svg #freepik_stories-404-error-with-portals:not(.animated) .animable {
+    opacity: 0;
+}
+
+svg #freepik_stories-404-error-with-portals.animated #freepik--background-complete--inject-58 {
+    animation: 6s Infinite linear floating;
+    animation-delay: 0s;
+}
+
+svg #freepik_stories-404-error-with-portals.animated #freepik--portal-4--inject-58 {
+    animation: 6s Infinite linear heartbeat;
+    animation-delay: 0s;
+}
+
+svg #freepik_stories-404-error-with-portals.animated #freepik--portal-3--inject-58 {
+    animation: 6s Infinite linear heartbeat;
+    animation-delay: 0s;
+}
+
+svg #freepik_stories-404-error-with-portals.animated #freepik--portal-2--inject-58 {
+    animation: 6s Infinite linear heartbeat;
+    animation-delay: 0s;
+}
+
+svg #freepik_stories-404-error-with-portals.animated #freepik--portal-1--inject-58 {
+    animation: 6s Infinite linear heartbeat;
+    animation-delay: 0s;
+}
+
+svg #freepik_stories-404-error-with-portals.animated #freepik--Texts--inject-58 {
+    animation: 6s Infinite linear floating;
+    animation-delay: 0s;
+}
+
+svg#freepik_stories-404-error-with-portals.animated #freepik--character-part-2--inject-58 {
+    animation: 6s Infinite linear wind;
+    animation-delay: 0s;
+}
+
+svg#freepik_stories-404-error-with-portals.animated #freepik--character-part-1--inject-58 {
+    animation: 6s Infinite linear wind;
+    animation-delay: 0s;
+}
+
+@keyframes floating {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1.1);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes wind {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(1deg);
+    }
+
+    75% {
+        transform: rotate(-1deg);
+    }
 }
