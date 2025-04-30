@@ -1,8 +1,7 @@
 <!-- header.php -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLD e-Sports Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +19,6 @@
         <div class="nav-item"><a href="#">Home</a></div>
         <div class="nav-item"><a href="#">Team</a></div>
         <div class="nav-item"><a href="#">Matches</a></div>
-        <div class="nav-item"><a href="#">Shop</a></div>
         <div class="nav-item"><a href="index.php?page=signup">Signup</a></div>
     </nav>
 </header>
