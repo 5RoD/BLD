@@ -9,6 +9,12 @@ require_once('../php/init.php');
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 $page_file = $page . '.php';
 
+
+// Adjust path for admin pages
+if (str_starts_with($page, 'admin/')) {
+    $page_file = '../' . $page_file; // Ensure it's relative to the 'public' directory
+}
+
 if (file_exists($page_file)) {
     include_once($page_file);
 } else {

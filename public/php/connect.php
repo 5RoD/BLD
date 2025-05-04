@@ -1,21 +1,22 @@
 <?php
+// connect.php creates a global PDO connection using already loaded environment variables
+require_once 'env.php';
 
-
-require_once 'env.php'; // make sure this path is right zaki or whoever
-loadEnv(__DIR__ . '/../../.env'); // Updated path to root directory
-
-// Now grab creds from $_ENV
 $host = $_ENV['DB_HOST'];
 $user = $_ENV['DB_USER'];
 $pass = $_ENV['DB_PASS'];
 $dbname = $_ENV['DB_NAME'];
 $port = $_ENV['DB_PORT'];
 
-// Connect
-$conn = new mysqli($host, $user, $pass, $dbname, $port);
-
-// Check connection
-if ($conn->connect_error) {
-    die('Connection failed: ' . $conn->connect_error);
+try {
+    global $conn;
+    $conn = new PDO(
+        "mysql:host=$host;port=$port;dbname=$dbname",
+        $user,
+        $pass
+    );
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
 }
 ?>

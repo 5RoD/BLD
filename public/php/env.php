@@ -1,9 +1,9 @@
 <?php
-// env.php
+// env.php made with gpt
 function loadEnv($path)
 {
     if (!file_exists($path)) {
-        throw new Exception(".env file not found at $path");
+        throw new Exception("\.env file not found at $path");
     }
 
     $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
