@@ -19,30 +19,38 @@
     <!-- Meet Our Players -->
     <section class="team-members">
         <h3>Meet Our Players</h3>
+
         <div class="members">
             <div class="member">
+                <a href="https://www.vlr.gg/player/1265/johnqt" target="_blank">
                 <img src="../images/player1.jpg" alt="IGL player JohnQT">
                 <h4>JohnQT</h4>
                 <p>Role: IGL</p>
+            </a>
             </div>
             <div class="member">
+                <a href="https://www.vlr.gg/player/4004/zekken" target="_blank">
                 <img src="../images/player2.jpg" alt="Entry player Zekken">
                 <h4>Zekken</h4>
                 <p>Role: Entry</p>
+                </a>
             </div>
             <div class="member">
+                <a href="https://www.vlr.gg/player/729/zellsis" target="_blank">
                 <img src="../images/player3.jpg" alt="Support player Zellsis">
                 <h4>Zellsis</h4>
                 <p>Role: Support</p>
+                </a>
             </div>
         </div>
+
     </section>
 
-    <!-- Latest Match Highlights -->
-    <section class="latest-match">
-        <h3>Latest Match Highlights</h3>
-        <p>Check out the intense action of our latest Counter-Strike match!</p>
-        <a href="#" class="btn-main">Watch Now</a>
+    <!-- Latest News -->
+    <section class="latest-news">
+        <h3>Latest News!</h3>
+        <p>Check out our latest news down below!!</p>
+        <a href="#c1" class="btn-main">Read Now!</a>
     </section>
 
     <!-- News Section -->

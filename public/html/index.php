@@ -18,4 +18,3 @@ if (file_exists($page_file)) {
 // Load footer
 include_once('../includes/footer.php');
 ?>
-<script src="../js/motionBlur.js"></script>
