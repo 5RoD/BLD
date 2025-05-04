@@ -135,6 +135,7 @@ header nav .nav-item a:hover {
     text-align: center;
     border-top: 1px solid var(--accent-color);
 
+
 }
 
 .team-members h3 {
@@ -147,6 +148,7 @@ header nav .nav-item a:hover {
     display: flex;
     justify-content: space-around;
     gap: 20px;
+    text-decoration: none;
 }
 
 .member {
@@ -156,6 +158,7 @@ header nav .nav-item a:hover {
     width: 250px;
     text-align: center;
     transition: transform 0.3s ease;
+
 }
 
 .member img {
@@ -164,20 +167,132 @@ header nav .nav-item a:hover {
     height: 150px;
     object-fit: cover;
     margin-bottom: 10px;
+
 }
 
 .member h4 {
     font-size: 1.5rem;
     margin: 10px 0;
+
+    color: var(--font-color);
 }
 
 .member p {
     font-size: 1rem;
+    text-decoration: none;
+    color: var(--font-color);
 }
 
 .member:hover {
     transform: scale(1.05);
+
 }
+
+.team-members a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+
+
+/* Contact US Page */
+.contactus {
+    background-color: var(--bg-dark);
+    padding: 0;
+    color: var(--font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/background-rotated.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.contactus-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--footer-bg);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 7px 70px rgba(0, 0, 0, 0.11);
+    text-align: center;
+    max-height: 100%;
+}
+
+.contactus-container h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: var(--title-color);
+}
+
+.contactus-container p {
+    margin-top: 8px;
+    font-size: 10px;
+    color: gray;
+}
+
+/* Styling for input fields */
+.contactus-form input,
+.contactus-form select,
+.contactus-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: var(--font-color);
+    font-size: 16px;
+}
+
+.contactus-form input:hover,
+.contactus-form select:hover,
+.contactus-form textarea:hover {
+    background-color: #141414;
+}
+
+.contactus-form input::placeholder,
+.contactus-form textarea::placeholder {
+    color: #888;
+}
+
+/* Specific styling for the Subject dropdown */
+.contactus-form select {
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #1e1e1e;
+    color: var(--font-color);
+}
+
+.contactus-form select:hover {
+    background-color: #141414;
+}
+
+/* Styling for the message textarea */
+.contactus-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contactus-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.contactus-form button:hover {
+    background-color: var(--title-color);
+}
+
+
 
 
 .news {
@@ -321,8 +436,6 @@ header nav .nav-item a:hover {
 }
 
 
-
-
 .news-article {
     padding: 50px 10px 30px 10px;
     text-align: center;
@@ -347,8 +460,8 @@ header nav .nav-item a:hover {
 
 .news-article img {
     margin: 30px auto;
-    width: 60%;
-    height: 30%;
+    width: auto;
+    height: auto;
     object-fit: cover;
     display: flow;
     border: 1px solid transparent;
@@ -395,18 +508,18 @@ padding: 30px 30px;
 }
 
 
-/* Latest Match Section */
-.latest-match {
+/* Latest News Section */
+.latest-news {
     padding: 50px 20px;
     text-align: center;
 }
 
-.latest-match h3 {
+.latest-news h3 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.latest-match p {
+.latest-news p {
     font-size: 1.5rem;
     margin-bottom: 30px;
 }
@@ -551,6 +664,10 @@ footer .socials img {
 .clock {
     width: 10px;
     height: 10px;
+}
+
+.text-decoration {
+    text-decoration: none;
 }
 
 svg #freepik_stories-404-error-with-portals:not(.animated) .animable {
