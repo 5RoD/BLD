@@ -1,8 +1,43 @@
-<!-- Contact Us Up Section -->
+<?php
+require_once('.././php/connect.php');
+
+// Check if form was submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    global $conn;
+
+    if (!$conn) {
+        var_dump($_ENV); // Check if .env is loaded
+        die("Database connection is not established.");
+    }
+
+    // Get and sanitize form data
+    $firstName = htmlspecialchars($_POST['first-name']);
+    $lastName = htmlspecialchars($_POST['last-name']);
+    $email = htmlspecialchars($_POST['email']);
+    $subject = htmlspecialchars($_POST['subject']);
+    $message = htmlspecialchars($_POST['message']);
+
+    try {
+        // Prepare SQL statement and execute
+        $stmt = $conn->prepare("INSERT INTO ContactUS (firstname, lastname, email, subject, message) VALUES (?, ?, ?, ?, ?)");
+        $stmt->execute([$firstName, $lastName, $email, $subject, $message]);
+
+        // Redirect to avoid form re-submission on page reload
+        header("Location: " . $_SERVER['REQUEST_URI']);
+        exit();
+
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
+    }
+}
+?>
+
+<!-- Contact Us Section -->
 <section class="contactus">
     <div class="contactus-container">
         <h2>Contact Us</h2>
 
+        <!-- Contact Form -->
         <form action="index.php?page=contactus" method="POST" class="contactus-form" onsubmit="return contactUsAlert()">
             <!-- Name Section -->
             <div>
@@ -36,7 +71,7 @@
             <!-- Message Section -->
             <div>
                 <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                <textarea id="message" name="message" placeholder="Type your message here..." required maxlength="1500"></textarea>
             </div>
 
             <!-- Submit Button -->
@@ -45,6 +80,5 @@
         </form>
     </div>
 </section>
-<script src=".././js/contactUsAlert.js">
-    handl
-</script>
+
+<script src=".././js/contactUsAlert.js"></script>
