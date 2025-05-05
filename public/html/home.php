@@ -58,19 +58,19 @@
         <div class="main">
             <div class="card" id="c1">
                 <p>BLD named as Esports World Cup Foundation Partner</p>
-                <a href="index.php?page=news/news-1"><img src="../images/news/worldcuppartner.jpeg" alt="BLD named as Esports World Cup Foundation Partner"></a>
+                <a href="index.php?page=news/news-1"><img src="../images/news/worldcuppartner.jpg" alt="BLD named as Esports World Cup Foundation Partner"></a>
             </div>
             <div class="card" id="c2">
                 <p>BLD announces Cubert Academy, a CS:GO Academy team for the 2025 season</p>
-                <a href="#c2"><img src="../images/news/cubert-academy.png" alt="Cubert Academy announcement"></a>
+                <a href="index.php?page=news/news-2"><img src="../images/news/cubert-academy.png" alt="Cubert Academy announcement"></a>
             </div>
             <div class="card" id="c3">
                 <p>BLD announces gaming chair sponsorship with Razer</p>
-                <a href="#c3"><img src="../images/news/BLD-PARTNERSHIP-razer.png" alt="Gaming chair sponsorship"></a>
+                <a href="index.php?page=news/news-3"><img src="../images/news/BLD-PARTNERSHIP-razer.png" alt="Gaming chair sponsorship"></a>
             </div>
             <div class="card" id="c4">
                 <p>BLD victorious at first VCT Americas tournament of 2024, qualifies for VCT Masters Madrid</p>
-                <a href="#c4"><img src="../images/news/BLD-vct-won.png" alt="VCT win announcement"></a>
+                <a href="index.php?page=news/news-4"><img src="../images/news/BLD-vct-won.png" alt="VCT win announcement"></a>
             </div>
         </div>
     </section>

@@ -538,16 +538,17 @@ header nav .nav-item a:hover {
 
 .news-article img {
     margin: 30px auto;
-    width: auto;
-    height: auto;
+    width: 70%;
+    height: 40%;
+    display: flex;
     object-fit: cover;
-    display: flow;
     border: 1px solid transparent;
     border-radius: 10px;
     box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(4px);
     overflow: hidden;
 }
+
 
 .news-article p {
     font-family: "Space Mono", monospace;

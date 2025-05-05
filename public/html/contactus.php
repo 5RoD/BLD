@@ -14,13 +14,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $firstName = htmlspecialchars($_POST['first-name']);
     $lastName = htmlspecialchars($_POST['last-name']);
     $email = htmlspecialchars($_POST['email']);
+    $phonenumber = htmlspecialchars($_POST['phonenumber']);
     $subject = htmlspecialchars($_POST['subject']);
     $message = htmlspecialchars($_POST['message']);
 
     try {
         // Prepare SQL statement and execute
-        $stmt = $conn->prepare("INSERT INTO ContactUS (firstname, lastname, email, subject, message) VALUES (?, ?, ?, ?, ?)");
-        $stmt->execute([$firstName, $lastName, $email, $subject, $message]);
+        $stmt = $conn->prepare("INSERT INTO ContactUS (firstname, lastname, email, phonenumber, subject, message) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt->execute([$firstName, $lastName, $email, $phonenumber, $subject, $message]);
 
         // Redirect to avoid form re-submission on page reload
         header("Location: " . $_SERVER['REQUEST_URI']);
@@ -54,6 +55,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div>
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="email@gmail.com" required>
+            </div>
+
+            <!-- Phone Section -->
+                        <div>
+                <label for="phonenumber">Phone Number</label>
+                <input type="phonenumber" id="phonenumber" name="phonenumber" placeholder="06 12345678" required maxlength="10">
             </div>
 
             <!-- Subject Section -->
