@@ -2,6 +2,7 @@
 
 <!-- News-1 Page -->
 <head>
+    <!-- Custom Fonts for the news text DONT REMOVE -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -10,8 +11,9 @@
 
     <section class="news-article">
         <h2>BLD named as Esports World Cup Foundation Partner</h2>
-        <?php echo date("Y-m-d"); ?>
-        <img src="../images/news/cubert-academy.png" alt="BLD named as Esports World Cup Foundation Partner">
+        <p>Published on: 2023-10-01</p>
+        <p>Author: BLD e-Sports</p>
+        <img src="../images/news/worldcuppartner.jpg" alt="BLD named as Esports World Cup Foundation Partner">
         <div class="news-card">
             <div class="news-card-text">
                 <h1>Los Angeles, California</h1>

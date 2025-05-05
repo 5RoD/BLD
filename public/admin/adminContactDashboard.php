@@ -1,4 +1,6 @@
 <?php
+// needed to load the database stuff variables
+require_once("../php/../php/connect.php");
 
 $host = $_ENV['DB_HOST'];
 $user = $_ENV['DB_USER'];
@@ -49,6 +51,7 @@ try {
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
+            <th>Phone Number</th>
             <th>Subject</th>
             <th>Message</th>
             <th>Date</th>
@@ -62,6 +65,7 @@ try {
                 <td><?php echo htmlspecialchars($contact['firstname']); ?></td>
                 <td><?php echo htmlspecialchars($contact['lastname']); ?></td>
                 <td><?php echo htmlspecialchars($contact['email']); ?></td>
+                <td><?php echo htmlspecialchars($contact['phonenumber']); ?></td>
                 <td><?php echo htmlspecialchars($contact['subject']); ?></td>
                 <td><?php echo htmlspecialchars($contact['message']); ?></td>
                 <td><?php echo htmlspecialchars($contact['date']); ?></td>
