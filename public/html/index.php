@@ -12,9 +12,10 @@ $page_file = $page . '.php';
 
 // Adjust path for admin pages
 if (str_starts_with($page, 'admin/')) {
-    $page_file = '../' . $page_file; // Ensure it's relative to the 'public' directory
+    $page_file = '../' . $page_file;
 }
 
+//Check if the file exists and if it does include it on the page
 if (file_exists($page_file)) {
     include_once($page_file);
 } else {
