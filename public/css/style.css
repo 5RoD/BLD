@@ -861,3 +861,9 @@ svg#freepik_stories-404-error-with-portals.animated #freepik--character-part-1--
         transform: rotate(-1deg);
     }
 }
+
+
+.titleHistory {
+    font-weight: bolder;
+    font-weight: 900;
+}
