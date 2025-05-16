@@ -20,5 +20,6 @@
         <div class="nav-item"><a href="index.php?page=#">Team</a></div>
         <div class="nav-item"><a href="index.php?page=contactus">Contact us</a></div>
         <div class="nav-item"><a href="index.php?page=signup">Signup</a></div>
+        <div class="nav-item"><a href="index.php?page=history">History</a></div>
     </nav>
 </header>

@@ -5,7 +5,7 @@ global $conn;
 $queries = [
     // ContactUS table
     "CREATE TABLE IF NOT EXISTS ContactUS (
-        contactus_id INT(6) AUTO_INCREMENT PRIMARY KEY,
+        contactus_id INT AUTO_INCREMENT PRIMARY KEY,
         firstname VARCHAR(30) NOT NULL,
         lastname VARCHAR(30) NOT NULL,
         email VARCHAR(50),

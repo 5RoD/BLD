@@ -1,6 +1,6 @@
 <?php
 // needed to load the database stuff variables
-require_once("../php/../php/connect.php");
+require_once("../php/connect.php");
 
 $host = $_ENV['DB_HOST'];
 $user = $_ENV['DB_USER'];
