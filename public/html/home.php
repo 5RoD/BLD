@@ -17,7 +17,7 @@
     </section>
 
     <!-- Meet Our Players -->
-    <section class="team-members">
+    <section class="team-members" id="team">
         <h3>Meet Our Players</h3>
 
         <div class="members">
