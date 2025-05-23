@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <!-- Phone Section -->
                         <div>
                 <label for="phonenumber">Phone Number</label>
-                <input type="phonenumber" id="phonenumber" name="phonenumber" placeholder="06 12345678" required maxlength="10">
+                <input type="number" id="phonenumber" name="phonenumber" placeholder="06 12345678" required maxlength="10">
             </div>
 
             <!-- Subject Section -->

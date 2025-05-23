@@ -17,8 +17,10 @@
     </div>
     <nav>
         <div class="nav-item"><a href="index.php?page=home">Home</a></div>
-        <div class="nav-item"><a href="index.php?page=#">Team</a></div>
+        <div class="nav-item"><a href="index.php?page=home#team">Team</a></div>
         <div class="nav-item"><a href="index.php?page=contactus">Contact us</a></div>
         <div class="nav-item"><a href="index.php?page=signup">Signup</a></div>
+        <div class="nav-item"><a href="index.php?page=history">History</a></div>
+        <div class="nav-item"><a href="index.php?page=results">Results</a></div>
     </nav>
 </header>
