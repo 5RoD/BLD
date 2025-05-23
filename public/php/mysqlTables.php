@@ -30,6 +30,7 @@ $queries = [
     )"
 ];
 
+
 // Runs all the tables creations
 try {
     foreach ($queries as $sql) {
