@@ -2,6 +2,20 @@
 # ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ![banner-removebg-preview](https://github.com/user-attachments/assets/5f5204aa-6475-427e-abb1-c0d4fec464ac)
 ---
 
+HOW TO INSTALL AND USE:
+
+copy this and do a git clone in your terminal: https://github.com/5RoD/BLD.git
+
+to connect it to your database you will have to create a .env file in your project. in the .env file you will have to paste this and fill it in:
+DB_HOST=
+DB_USER=
+DB_PASS=
+DB_NAME=
+DB_PORT=
+
+
+
+
 
 # BLD E-Sports Team 🕹️
 
