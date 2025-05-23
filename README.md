@@ -7,6 +7,7 @@ HOW TO INSTALL AND USE:
 copy this and do a git clone in your terminal: https://github.com/5RoD/BLD.git
 
 to connect it to your database you will have to create a .env file in your project. in the .env file you will have to paste this and fill it in:
+
 **DB_HOST**=localhost  
 **DB_USER**=username  
 **DB_PASS**=pass123  
