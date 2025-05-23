@@ -37,7 +37,7 @@ body {
     font-weight: 400;
     font-style: normal;
     display: flex;
-height: 100%;
+    height: 100%
 
 
 }
@@ -168,6 +168,11 @@ header nav .nav-item a:hover {
 
 .admincontact button:hover {
     background-color: #d32f2f;
+}
+
+
+.div-margin-news-temp {
+    margin: 50px 500px;
 }
 
 
@@ -583,7 +588,8 @@ header nav .nav-item a:hover {
 
 }
 .news-card-text {
-padding: 30px 30px;
+    padding: 30px;
+    margin-bottom: 260px;
     text-align: center;
 }
 
@@ -854,4 +860,58 @@ svg#freepik_stories-404-error-with-portals.animated #freepik--character-part-1--
     75% {
         transform: rotate(-1deg);
     }
+}
+
+
+.titleHistory {
+    font-weight: bolder;
+    font-weight: 900;
+}
+
+
+/* From Uiverse.io by elijahgummer */
+.tooltip-container {
+    position: relative;
+    background: var(--bg-dark);
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 16px;
+    height: 16px;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+.tooltip {
+    position: absolute;
+    top: -39px; /* Adjusted top position */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: var(--bg-dark);
+    color: white; /* Text color */
+    border-radius: 5px;
+    width: 210px;
+    height: 30px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.tooltip::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--btn-hover-color);
+}
+
+.tooltip-container:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
