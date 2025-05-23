@@ -51,7 +51,6 @@ Big props to the squad for bringing the vision to life. 🙌
 - **Frontend:** HTML, CSS
 - **Backend:** PHP, MYSQL
 - **Database:** MYSQL
-- **Other Tools:** Figma, GitHub Projects
 
 ## 📅 Timeline
 
@@ -63,7 +62,7 @@ Big props to the squad for bringing the vision to life. 🙌
 ## 📢 Updates
 
 Follow the repo for the latest commits, sneak peeks, and chaos.  
-> *Spoiler: it’s gonna 🔥.*
+> *Spoiler: it’s gonna be 🔥.*
 
 ---
 
