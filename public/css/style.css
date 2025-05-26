@@ -915,3 +915,78 @@ svg#freepik_stories-404-error-with-portals.animated #freepik--character-part-1--
     visibility: visible;
     pointer-events: auto;
 }
+
+
+/* Tablet (≤ 991px) */
+@media (max-width: 991px) {
+    .contactus {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 2rem 1rem;
+    }
+  
+    .contactus-container {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  
+    .members {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    .member {
+      width: 45%;
+    }
+  
+    .cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    .card {
+      width: 90%;
+      height: auto;
+      transform: none !important;
+      filter: none !important;
+    }
+  }
+  
+  /* Mobile (≤ 600px) */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header nav {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .member {
+      width: 90%;
+    }
+  
+    .btn-main {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .join h2 {
+      font-size: 1.5rem;
+    }
+  
+    .join p {
+      font-size: 1rem;
+    }
+  
+    .admincontact table {
+      font-size: 0.8rem;
+      word-break: break-word;
+    }
+  }
+  
