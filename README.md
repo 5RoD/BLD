@@ -19,7 +19,6 @@ We’re building something special here for the e-sports scene, focused on innov
 
 - **Dilan**
 - **Mohamad**
-- **Mahi**
 - **Zaki**
 
 Big props to the squad for bringing the vision to life. 🙌
@@ -48,7 +47,7 @@ Big props to the squad for bringing the vision to life. 🙌
 ## 📢 Updates
 
 Follow the repo for the latest commits, sneak peeks, and chaos.  
-> *Spoiler: it’s gonna 🔥.*
+> *Spoiler: it’s gonna be🔥.*
 
 ---
 
