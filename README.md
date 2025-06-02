@@ -1,6 +1,24 @@
 
-# ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ![banner-removebg-preview](https://github.com/user-attachments/assets/5f5204aa-6475-427e-abb1-c0d4fec464ac)
+####                        ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ![BLD-LOGO_optimized](https://github.com/user-attachments/assets/64ad48b3-30ab-4425-8ce3-da78786d3da3)
+‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ 
+
 ---
+
+HOW TO INSTALL AND USE:
+
+copy this and do a git clone in your terminal: https://github.com/5RoD/BLD.git
+
+to connect it to your database you will have to create a .env file in your project. in the .env file you will have to paste this and fill it in:
+
+**DB_HOST**=localhost  
+**DB_USER**=username  
+**DB_PASS**=pass123  
+**DB_NAME**=dbname  
+**DB_PORT**=3306  
+
+
+
+
 
 
 # BLD E-Sports Team 🕹️
@@ -35,7 +53,6 @@ Big props to the squad for bringing the vision to life. 🙌
 - **Frontend:** HTML, CSS
 - **Backend:** PHP, MYSQL
 - **Database:** MYSQL
-- **Other Tools:** Figma, GitHub Projects
 
 ## 📅 Timeline
 
@@ -45,9 +62,3 @@ Big props to the squad for bringing the vision to life. 🙌
 - **Phase 4:** Final Launch 🚀
 
 ## 📢 Updates
-
-Follow the repo for the latest commits, sneak peeks, and chaos.  
-> *Spoiler: it’s gonna be🔥.*
-
----
-
