@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt = $conn->prepare("INSERT INTO MatchResults (game_title, winner, score, match_type, match_date) VALUES (?, ?, ?, ?, ?)");
         $stmt->execute([$game_title, $winner, $score, $match_type, $match_date]);
 
-        // Redirect to avoid form re-submission on page reload
+        // Redirect so it doesnt re-sends the data on page reload
         header("Location: " . $_SERVER['REQUEST_URI']);
         exit();
 

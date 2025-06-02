@@ -62,9 +62,3 @@ Big props to the squad for bringing the vision to life. 🙌
 - **Phase 4:** Final Launch 🚀
 
 ## 📢 Updates
-
-Follow the repo for the latest commits, sneak peeks, and chaos.  
-> *Spoiler: it’s gonna be 🔥.*
-
----
-
