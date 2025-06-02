@@ -2,16 +2,15 @@
 // needed to load the database stuff variables
 require_once("../php/connect.php");
 
-$host = $_ENV['DB_HOST'];
-$user = $_ENV['DB_USER'];
-$pass = $_ENV['DB_PASS'];
-$dbname = $_ENV['DB_NAME'];
-$port = $_ENV['DB_PORT'];
+
 
 try {
-    $conn = new PDO("mysql:host=$host;port=$port;dbname=$dbname", $user, $pass);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+global $conn;
 
+    if (!$conn) {
+        var_dump($_ENV); // Check if .env is loaded
+        die("Database connection is not established.");
+    }
     // Handle deletion
     if (isset($_POST['delete'])) {
         $contactus_id = $_POST['contactus_id'];
@@ -59,6 +58,7 @@ try {
         </tr>
         </thead>
         <tbody>
+<!--   Loop Through all the submissions     -->
         <?php foreach ($contacts as $contact): ?>
             <tr>
                 <td><?php echo htmlspecialchars($contact['contactus_id']); ?></td>
